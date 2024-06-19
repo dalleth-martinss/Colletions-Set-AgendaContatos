@@ -22,7 +22,7 @@ public class Contato {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // metodo para validar o 1º nome que colocarmos para burscar todos com aquele 1º nome
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Contato contato = (Contato) o;
@@ -30,7 +30,7 @@ public class Contato {
     }
 
     @Override
-    public int hashCode() { // compara se os nomes são iguais na hora do cadastro
+    public int hashCode() { // compara se os nomes são iguais, se for igual não vai adicionar.
         return Objects.hashCode(nome);
     }
 
